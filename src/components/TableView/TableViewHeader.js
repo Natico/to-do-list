@@ -1,7 +1,7 @@
 import React from 'react'
 import { Table } from 'semantic-ui-react';
 
-const TaskListRow = (props) => (
+const TableViewBodyRow = (props) => (
 
 
     <Table.Row>
@@ -14,5 +14,5 @@ const TaskListRow = (props) => (
 )
 
 
-export default TaskListRow;
+export default TableViewBodyRow;
 

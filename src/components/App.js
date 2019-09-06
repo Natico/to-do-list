@@ -1,5 +1,5 @@
 import React from 'react'
-import TaskListTable from './TaskListTable/TaskListTable'
+import TableView from './TableView/TableView'
 
 const tasksObject = [
     { id: 1, name: 'test1', startTime: '2019-08-12', endTime: '2019-08-13' },
@@ -11,9 +11,9 @@ const tasksObject = [
 ];
 
 const App = () => (
-    <TaskListTable tasksObject={tasksObject}>
+    <TableView tasksObject={tasksObject}>
         <p>TEST</p>
-    </TaskListTable>
+    </TableView>
 )
 
 export default App
