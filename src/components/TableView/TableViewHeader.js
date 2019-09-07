@@ -1,18 +1,12 @@
-import React from 'react'
-import { Table } from 'semantic-ui-react';
+import React from "react";
+import { Table } from "semantic-ui-react";
 
-const TableViewBodyRow = (props) => (
-
-
-    <Table.Row>
-        <Table.Cell>{props.taskObject.id}</Table.Cell>
-        <Table.Cell>{props.taskObject.name}</Table.Cell>
-        <Table.Cell>{props.taskObject.startTime}</Table.Cell>
-        <Table.Cell>{props.taskObject.endTime}</Table.Cell>
-    </Table.Row>
-
-)
-
+const TableViewBodyRow = props => {
+  const tasks = props.taskObject;
+  const cells = Object.keys(tasks).map(task => (
+    <Table.HeaderCell>{task}</Table.HeaderCell>
+  ));
+  return <Table.Row>{cells}</Table.Row>;
+};
 
 export default TableViewBodyRow;
-
